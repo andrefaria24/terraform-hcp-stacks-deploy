@@ -8,7 +8,7 @@ identity_token "aws" {
 deployment "development" {
   inputs = {
     regions        = ["us-east-1"]
-    role_arn       = "arn:aws:iam::008971679752:role/stacks-org-TwjieVHvSUCA4EVX-prj-NhVLKRwUp692r2zK"
+    role_arn       = "arn:aws:iam::008971679752:role/stacks-acfaria-hashicorp-Stacks-Example"
     identity_token = identity_token.aws.jwt
     default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
   }
@@ -17,7 +17,7 @@ deployment "development" {
 deployment "production" {
   inputs = {
     regions        = ["us-east-1", "us-west-1"]
-    role_arn       = "arn:aws:iam::008971679752:role/stacks-org-TwjieVHvSUCA4EVX-prj-NhVLKRwUp692r2zK"
+    role_arn       = "arn:aws:iam::008971679752:role/stacks-acfaria-hashicorp-Stacks-Example"
     identity_token = identity_token.aws.jwt
     default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
   }
